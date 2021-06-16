@@ -1,5 +1,5 @@
-<div style="text-align:center;font-size:45px;font-weight:bold">Computer Vision</div>
-<div style="text-align:center;font-size:30px;font-weight:norm">Assignment 2</div>
+<div style="text-align:center;font-size:45px;font-weight:bold">脚本程序设计</div>
+<div style="text-align:center;font-size:30px;font-weight:norm">Todo list</div>
 
 <center><img src="./img/tj.png" width = "60%" /></center>
 
@@ -18,10 +18,11 @@
 
 
 <center>
-  <div style="text-align:center;font-size:30px;font-weight:bold">ID:　　　　　　1750226</div>
-  <div style="text-align:center;font-size:30px;font-weight:bold">Name:　　　　Yumin Lu</div>
-  <div style="text-align:center;font-size:30px;font-weight:bold">Adviser:　Prof. Lin Zhang</div>
+  <div style="text-align:center;font-size:30px;font-weight:bold">学号: 1750226</div>
+  <div style="text-align:center;font-size:30px;font-weight:bold">姓名: 陆昱珉</div>
+  <div style="text-align:center;font-size:30px;font-weight:bold">指导老师: 徐凯</div>
 </center>
+
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -212,6 +213,7 @@ function render() {
 ### 五、项目评估
 
 1. 功能完成上，本项目完成了脚本程序设计课程项目所要求的基本功能点，同时实现了若干附加功能点：单条todo编辑、查找指定todo项、拖动todo项以调换次序的交互方式、简介美观的样式、兼容性良好的布局
-2. 该项目可同时应用于pc端以及移动端，兼容性良好
-3. 代码逻辑清晰，函数命名可读性强
+2. ⻚⾯内各元素简洁整⻬；去除了⼀些繁复的按钮代之以简单，常⽤的⼿势进⾏操作，符合移动端的设备特点和⽤户体验
+3. 该项目可同时应用于pc端以及移动端，兼容性良好
+4. 代码逻辑清晰，函数命名可读性强
 
