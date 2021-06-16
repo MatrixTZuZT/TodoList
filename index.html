@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyTodo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link id="todostyle" rel="stylesheet" href="./light.css">
+    <link rel="stylesheet" href="./switch.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="center inputTodo">
+            <span>MyTodo</span>
+            <input type="text" placeholder="Type in todos" id="ipt" oninput="inputChange()">
+        </div>
+    </header>
+    <div class="switch">
+        <input type="checkbox" id="cbx" onchange="changeStyle()" class="uiswitch">
+    </div>
+    <div class="center todoContainer">
+        <h2>Active <span class="todoCount">0</span></h2>
+        <div class="select-all" onclick="selectAll()">Select All</div>
+        <ul class="todo">
+            <!-- <li>
+                <input type="checkbox" class="button">
+                <p>内容</p>
+                <span>-</span>
+            </li> -->
+        </ul>
+
+        <h2>Done <span class="doneCount">0</span></h2>
+        <div class="unselect-all" onclick="unSelectAll()">Unselect All</div>
+        <ul class="done">
+        </ul>
+    </div>
+
+    <footer>
+        Copyright &copy; 2021 Yumin Lu <a href="javascript:clear();">clear all</a>
+    </footer>
+    <script src="./todoList.js"></script>
+</body>
+</html>
