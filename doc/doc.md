@@ -30,6 +30,8 @@
 
 **Mytodo** 是一个移动端日程管理网页。在Mytodo中，用户可以输入、查看、编辑管理日程，并且所添加的日程会被自动保存以便下次查看
 
+本次项目已完成部署，用户可访问https://matrixtzuzt.github.io/TodoList/来体验本项目
+
 ### 二、开发环境
 
 - 开发语言：html，javascript，css

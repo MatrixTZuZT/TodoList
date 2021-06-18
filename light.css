@@ -10,6 +10,7 @@ ul {
 body {
     font-family: "Montserrat";
     background-color: #f1f1f1;
+    transition: all .3s ease-in-out;
 }
 
 /* 中心区域 */
