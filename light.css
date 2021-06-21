@@ -75,6 +75,7 @@ h2 span {
     font-size: 20px;
     /* border-radius: 20px; */
     background-color: #d66959;
+    transition: all .3s ease-in-out;
 }
 
 ul {
@@ -94,13 +95,11 @@ ul li {
     width: 100%;
     margin-bottom: 20px;
     align-items: center;
-    /* border-bottom: 3px solid #629A9C; */
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0);
     font-size: 25px;
 }
 
-/* modified */
 ul li input {
     width: 22px;
     height: 22px;
@@ -126,7 +125,6 @@ ul li span {
     height: 20px;
     background-size: 100% 100%;
     background-image: url("imgs/light-x.png");
-    /* background-color: #4b5a72; */
 }
 
 .select-all {
