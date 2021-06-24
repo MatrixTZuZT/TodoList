@@ -1,5 +1,5 @@
 <div style="text-align:center;font-size:45px;font-weight:bold">脚本程序设计</div>
-<div style="text-align:center;font-size:30px;font-weight:norm">Todo list</div>
+<div style="text-align:center;font-size:30px;font-weight:norm">TodoMVC</div>
 
 <center><img src="./img/tj.png" width = "60%" /></center>
 
@@ -18,9 +18,9 @@
 
 
 <center>
-  <div style="text-align:center;font-size:30px;font-weight:bold">学号: 1750226</div>
-  <div style="text-align:center;font-size:30px;font-weight:bold">姓名: 陆昱珉</div>
-  <div style="text-align:center;font-size:30px;font-weight:bold">指导老师: 徐凯</div>
+  <div style="text-align:center;font-size:20px;font-weight:bold">学号: 1750226</div>
+  <div style="text-align:center;font-size:20px;font-weight:bold">姓名: 陆昱珉</div>
+  <div style="text-align:center;font-size:20px;font-weight:bold">指导老师: 徐凯</div>
 </center>
 
 
@@ -45,19 +45,25 @@
 
    在顶部输入框输入相应内容并按下**Enter/完成**按键即可添加一条Todo项
 
-   <center><img src="./img/1.png" width = "40%" /><img src="./img/2.png" width = "40%" /> </center>
+   <center><img src="./img/1.png" width = "40%" /> <img src="./img/2.png" width = "40%" /> </center>
+
+   <div STYLE="page-break-after: always;"></div>
 
  - 删除单条Todo项
 
    点击相应Todo项右侧的“❌”图标即可删除相应Todo项
 
-   <center><img src="./img/3.png" width = "40%" /><img src="./img/1.png" width = "40%" /> </center>
+   <center><img src="./img/3.png" width = "40%" /> <img src="./img/1.png" width = "40%" /> </center>
+
+   <div STYLE="page-break-after: always;"></div>
 
  - 删除所有Todo项
 
    点击底部**clear all**即可删除所有Todo项
 
-   <center><img src="./img/20.png" width = "40%" /><img src="./img/21.png" width = "40%" /> </center>
+   <center><img src="./img/20.png" width = "40%" /> <img src="./img/21.png" width = "40%" /> </center>
+
+   <div STYLE="page-break-after: always;"></div>
 
  - 标记**单条/多条**Todo项为**已完成/未完成**
 
@@ -65,19 +71,15 @@
 
       点击相应Todo项左侧的方框即可改变此Todo项的状态为**已完成/未完成**
 
-      <center><img src="./img/4.png" width = "23%" /><img src="./img/5.png" width = "23%" /><img src="./img/6.png" width = "23%" /><img src="./img/7.png" width = "23%" /> </center>
+      <center><img src="./img/4.png" width = "23%" /> <img src="./img/5.png" width = "23%" /> <img src="./img/6.png" width = "23%" /> <img src="./img/7.png" width = "23%" /> </center>
 
     - 标记**单多**Todo项为**已完成/未完成**
 
       点击左侧**Select All/Unselect All**即可改变该栏目内所有Todo项的状态为**已完成/未完成**
 
-      <center><img src="./img/8.png" width = "23%" /><img src="./img/8.png" width = "23%" /><img src="./img/10.png" width = "23%" /><img src="./img/11.png" width = "23%" /> </center>
+      <center><img src="./img/8.png" width = "23%" /> <img src="./img/8.png" width = "23%" /> <img src="./img/10.png" width = "23%" /> <img src="./img/11.png" width = "23%" /> </center>
 
- - 实时显示**已完成/未完成**Todo项数量
-
-   当有**一条/多条**Todo项被改变状态时，相应栏目的Todo项计数器会自动调整
-
-   <center><img src="./img/13.png" width = "40%" /><img src="./img/14.png" width = "40%" /> </center>
+    <div STYLE="page-break-after: always;"></div>
 
  - 数据持久化
 
@@ -85,34 +87,59 @@
 
    <center><img src="./img/12.png" width = "100%" /> </center>
 
-   图中每一条Todo的数据结构如黄色框中所示，具体含义为：
+   图中每一条Todo的数据结构如下方红色框中所示，具体含义为：
 
    ```json
    {
      content: "Todo content",	// Todo项所存储的内容
-     done: true								// Todo项的完成状态：已完成/未完成
+     done: false								// Todo项的完成状态：已完成/未完成
+     like: false								// Todo项的收藏状态：已收藏/未收藏
    }
    ```
 
+<div STYLE="page-break-after: always;"></div>
+
 #### 高级功能
+
+- 实时显示**已完成/未完成**Todo项数量
+
+  当有**一条/多条**Todo项被改变状态时，相应栏目的Todo项计数器会自动调整
+
+  <center><img src="./img/13.png" width = "40%" /> <img src="./img/14.png" width = "40%" /> </center>
+
+  <div STYLE="page-break-after: always;"></div>
 
 - 单条Todo内容编辑
 
   将**手指/鼠标**放置在一条Todo项的文字内容上并点击，即可开始对相应Todo项的编辑，编辑完成后按下**Enter/完成**即可完成更改
 
-  <center><img src="./img/15.png" width = "30%" /><img src="./img/16.png" width = "30%" /><img src="./img/17.png" width = "30%" /></center>
+  <center><img src="./img/15.png" width = "30%" /> <img src="./img/16.png" width = "30%" /> <img src="./img/17.png" width = "30%" /></center>
+
+  <div STYLE="page-break-after: always;"></div>
 
 - 查找指定Todo项
 
   在顶端输入框输入Todo项内容时，如果输入内容与已存在的Todo项中的某一项获多项相同，系统会自动在相应Todo项下添加下划线以便用户查找
 
-  <center><img src="./img/18.png" width = "40%" /><img src="./img/19.png" width = "40%" /> </center>
+  <center><img src="./img/18.png" width = "40%" /> <img src="./img/19.png" width = "40%" /> </center>
+
+  <div STYLE="page-break-after: always;"></div>
+
+- 标记收藏Todo项
+
+  点击下图红框中的五角星即可将该条Todo项标记为**收藏**，再次点击为**取消收藏**
+
+  <center><img src="./img/24.png" width = "40%" /> <img src="./img/25.png" width = "40%" /> </center>
+
+  <div STYLE="page-break-after: always;"></div>
 
 - 调换相应Todo项显示次序
 
   用户可以调整在**Active栏（未完成）**中的Todo项的排列次序，具体做法为将**鼠标/手指**点击某一个Todo项并将其拖拽到另一个在同一栏目中的todo项之上，随后**松开鼠标/停止触摸**，即可完成Todo项的次序替换
 
   <center><img src="./img/v1.gif" width = "40%" /> </center>
+
+  <div STYLE="page-break-after: always;"></div>
 
 - 简洁优雅的style
 
@@ -122,7 +149,9 @@
 
   **Mytodo**拥有两种主题模式，分别为黑暗模式和明亮模式，可通过下图中的切换开关开启，项目打开时默认为明亮模式
 
-  <center><img src="./img/22.png" width = "40%" /><img src="./img/23.png" width = "40%" /> </center>
+  <center><img src="./img/22.png" width = "40%" /> <img src="./img/23.png" width = "40%" /> </center> 
+
+  <div STYLE="page-break-after: always;"></div>
 
 - 响应式布局
 
@@ -144,6 +173,7 @@ mytodo(project fold)
 |--index.html
 |--dark.css
 |--light.css
+|--switch.css
 |--todoList.js
 ```
 
@@ -160,6 +190,10 @@ mytodo(project fold)
 > dark.css/light.css
 
 ​	黑暗/明亮风格的网页样式
+
+> switch.css
+
+​	切换按钮的样式
 
 > todoList.js
 
@@ -181,9 +215,9 @@ function render() {
     let i = 0
     for(etodo of todoLocalStore) {
         if(etodo.done) {
-            done.append(genreateTodo(etodo.content, "checked", i));
+            done.append(genreateTodo(etodo.content, "checked", i, etodo.like));
         } else {
-            todo.append(genreateTodo(etodo.content, "", i));
+            todo.append(genreateTodo(etodo.content, "", i, etodo.like));
         }
         i ++;
     }
@@ -212,10 +246,19 @@ function render() {
   todoLocalStore = JSON.parse(todoLocalStore);
   ```
 
+> Todo项数据结构
+
+单条Todo项的数据结构如下所示
+
+```json
+[{"content":"Eat launch","done":false,"like":false},
+ {"content":"Eat breakfast","done":true,"like":true}]
+```
+
 ### 五、项目评估
 
-1. 功能完成上，本项目完成了脚本程序设计课程项目所要求的基本功能点，同时实现了若干附加功能点：单条todo编辑、查找指定todo项、拖动todo项以调换次序的交互方式、简介美观的样式、兼容性良好的布局
-2. ⻚⾯内各元素简洁整⻬；去除了⼀些繁复的按钮代之以简单，常⽤的⼿势进⾏操作，符合移动端的设备特点和⽤户体验
+1. 功能完成上，本项目完成了脚本程序设计课程项目所要求的基本功能点，同时实现了若干附加功能点：单条todo编辑、实时显示todo数量、查找指定todo项、收藏todo项、拖动todo项以调换次序的交互方式、简介美观的样式、兼容性良好的布局
+2. ⻚⾯内各元素简洁整⻬；去除了⼀些繁复的按钮代以达到简洁；使用常⽤的⼿势进⾏操作，符合移动端的设备特点和⽤户体验
 3. 该项目可同时应用于pc端以及移动端，兼容性良好
 4. 代码逻辑清晰，函数命名可读性强
 

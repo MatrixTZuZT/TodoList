@@ -197,5 +197,21 @@ input[type="checkbox"]:checked::before {
     transition: all .3s ease-in-out;
 }
 
+ul li #like {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url("imgs/s.png");
+}
+ul li #notLike {
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url("imgs/nots.png");
+}
+
+
 footer{color:#666;font-size:14px;text-align:center;}
 footer a{color:#666;text-decoration:none;color:#999;}

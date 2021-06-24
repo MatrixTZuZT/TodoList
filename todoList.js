@@ -19,14 +19,15 @@ if(todoLocalStore) {
 $("#ipt").addEventListener("change", function() {
     todoLocalStore.push({
         content: this.value,
-        done: false
+        done: false,
+        like: false
     });
     // console.log(todoLocalStore);
     this.value = "";
     render();
 })
 
-function genreateTodo(content, checked = '', index) {
+function genreateTodo(content, checked = '', index, like) {
     liItem = document.createElement("li");
     liItem.draggable = true;
 
@@ -71,9 +72,11 @@ function genreateTodo(content, checked = '', index) {
         }
     }
 
+    likeStr = like ? "like" : "notLike";
     liItem.innerHTML = `<label><input id="todo-input" type="checkbox" ${checked} onchange="checkboxChanged(${index})"></label>
                         <p onclick=pEditable() onkeydown="pKeyDown(${index})">${content}</p>
-                        <span onclick="delClicked(${index})"></span>`;
+                        <span onclick="delClicked(${index})"></span>
+                        <span id='${likeStr}' onclick="like(${index})"></span>`;
     return liItem;
 }
 
@@ -105,6 +108,11 @@ function delClicked(index) {
     render();
 }
 
+function like(index) {
+    todoLocalStore[index].like = !todoLocalStore[index].like;
+    render();
+}
+
 //clear all
 function clear() {
     todoLocalStore = [];
@@ -118,9 +126,9 @@ function render() {
     let i = 0
     for(etodo of todoLocalStore) {
         if(etodo.done) {
-            done.append(genreateTodo(etodo.content, "checked", i));
+            done.append(genreateTodo(etodo.content, "checked", i, etodo.like));
         } else {
-            todo.append(genreateTodo(etodo.content, "", i));
+            todo.append(genreateTodo(etodo.content, "", i, etodo.like));
         }
         i ++;
     }
